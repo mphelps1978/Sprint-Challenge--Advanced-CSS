@@ -163,6 +163,17 @@ p {
 .navigation-container {
   background: #F6F6F6;
 }
+@media (min-width: 800px) {
+  .navigation-container {
+    overflow: hidden;
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    /* Full width */
+  }
+}
 @media (max-width: 500px) {
   .navigation-container {
     background: inherit;
@@ -214,8 +225,9 @@ p {
 .header-img {
   display: block;
   margin: 0 auto;
-  width: 100%;
+  width: 50%;
   border-radius: 10px;
+  margin-top: 7.5%;
 }
 @media (max-width: 500px) {
   .header-img {
