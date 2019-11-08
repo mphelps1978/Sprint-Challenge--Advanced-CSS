@@ -37,8 +37,11 @@ width: 100%;
 
 .header-img {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 42;
-	border-radius: 10px;
+	margin: 0 auto;
+	width: 100%;
+  border-radius: 10px;
+
+  		@media @mobile {
+			width: 100%;
+		} // close media query
 }
