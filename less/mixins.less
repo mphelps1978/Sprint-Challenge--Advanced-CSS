@@ -1,7 +1,16 @@
 // Mixins Here
 
-.flexbox(@j, @a){
-display: flex;
-justify-content: @j;
-align-items: @a;
+// Generic Flexbox Mixin
+.flexbox(@j, @a) {
+	display: flex;
+	justify-content: @j;
+	align-items: @a;
+}
+
+// Header Link Styling Mixin
+.header-links() {
+	text-decoration: none;
+	color: inherit;
+	font-size: 2.5rem;
+	padding: 0 2%;
 }
