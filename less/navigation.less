@@ -2,10 +2,20 @@
 
 .navigation-container {
 	background: @nav-bg;
+
+	@media @mobile {
+		background: inherit;
+	} // close media query
+
 	.navigation {
 		.flexbox(center, center);
 		flex-direction: column;
-    padding-bottom: 1%;
+		padding-bottom: 1%;
+
+		@media @mobile {
+			width: 90%;
+			margin: 0 auto;
+		} // close media query
 	} // close navigation
 
 	h1 {
@@ -14,7 +24,10 @@
 	} //close h1
 	nav {
 		width: 50%;
-		text-align: center;
+    text-align: center;
+@media @mobile{
+width: 100%;
+}
 
 		a {
 			.header-links();

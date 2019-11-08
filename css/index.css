@@ -163,12 +163,23 @@ p {
 .navigation-container {
   background: #F6F6F6;
 }
+@media (max-width: 500px) {
+  .navigation-container {
+    background: inherit;
+  }
+}
 .navigation-container .navigation {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding-bottom: 1%;
+}
+@media (max-width: 500px) {
+  .navigation-container .navigation {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 .navigation-container h1 {
   font-size: 6rem;
@@ -177,6 +188,11 @@ p {
 .navigation-container nav {
   width: 50%;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .navigation-container nav {
+    width: 100%;
+  }
 }
 .navigation-container nav a {
   text-decoration: none;
@@ -211,6 +227,11 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images {
+    display: none;
+  }
 }
 .home .space-images img {
   width: 28%;
