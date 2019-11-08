@@ -1,1 +1,61 @@
 // Navigation code here
+
+.navigation-container {
+	background: @nav-bg;
+
+	// we only want to fix the navbar to the top on desktop
+	@media (min-width: 800px) {
+		.static();
+	} // close media
+
+	@media @mobile {
+		background: inherit;
+	} // close media query
+
+	.navigation {
+		.flexbox(center, center);
+		flex-direction: column;
+		padding-bottom: 1%;
+
+		@media @mobile {
+			width: 90%;
+			margin: 0 auto;
+		} // close media query
+	} // close navigation
+
+	h1 {
+		font-size: 6rem;
+		padding: 1% 0;
+
+		@media @mobile {
+			font-size: 4rem;
+			padding-bottom: 4%;
+		} // close media query
+	} //close h1
+	nav {
+		width: 50%;
+		text-align: center;
+		@media @mobile {
+			width: 100%;
+		}
+
+		a {
+			.header-links();
+			@media @mobile {
+				font-size: 2.1rem;
+			} // close media query
+		} // close a
+	} //close nav container
+}
+
+.header-img {
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+	border-radius: 10px;
+	margin-top: 7.5%;
+
+	@media @mobile {
+		width: 100%;
+	} // close media query
+}
